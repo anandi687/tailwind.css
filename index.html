@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!--tailwid css-->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!--css-->
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    brand: {
+                        50: '#eef2ff',
+                        100: '#e0e7ff',
+                        200: '#c7d2fe',
+                        300: '#a5b4fc',
+                        400: '#818cf8',
+                        500: '#6366f1',
+                        600: '#4f46e5',
+                        700: '#4338ca',
+                        800: '#3730a3',
+                        900: '#312e81',
+                    }
+
+                },
+                boxshadow: {
+                    soft: '0 10px 30px rgba(0, 0, 0.8)',
+                }
+
+            }
+        }
+    }
+</script>
+</head>
+<body class="bg-white text-slate-800">
+    <!--o index-->
+    <div class="bg-slate-900 text-white text-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-2 text-center">
+            summer sale : Get 50% off pro plans-ends sunday
+        </div>
+    </div>
+
+    <!--1 part-->
+    <header class="sticky top:0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <a href="#" class="flex items-center gap-2 font-extrabold text-xl">
+                    <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600
+                text-white">T</span>Tailwind 12-UI
+                </a>
+                <nav class="hidden md:flex items-center gap-8 font-medium">
+                    <a href="#" class="hover:text-brand-600">Features</a>
+                    <a href="#" class="hover:text-brand-600">Status</a>
+                    <a href="#" class="hover:text-brand-600">Services</a>
+                    <a href="#" class="hover:text-brand-600">Gallery</a>
+                    <a href="#" class="hover:text-brand-600">Pricing</a>
+                    <a href="#" class="hover:text-brand-600">Contact</a>
+                </nav>
+                <div class="hidden md:flex items-center gap-3">
+                    <a class="px-3 py-3 rounded-lg border border-slate-200 hover:border-brand-600" href="#">Sign in</a>
+                    <a class="px-4 py-2 rounded-lg  bg-brand-600 text-white hover:border-brand-700" href="#cta">Get
+                        Started</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--2 part-->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 -z-10">
+            <img src="https://plus.unsplash.com/premium_photo-1681488040428-3437fda89bd9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8NTAlMjUlMjBvZmYlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600"
+                alt="hero" class="h-full w-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-white/90"></div>
+        </div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-28 lg:py-36">
+            <div class="max-w-3xl text-white">
+                <p class="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 
+                px-3 py-1 text-xs">New v3.0 released </p>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">Design faster with a
+                    beautiful,responsive Tailwind UI kit.</h1>
+                <p class="mt-5 text-lg text-white/90">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Explicabo est magni ex laudantium quasi eligendi quia atque tempora dolorum voluptatum eveniet
+                    recusandae aut, natus beatae ............</p>
+            </div class="mt-8 flex flex-warp gap-3">
+            <a href="#pricing" class="px-5 py-3 rounded-xl bg-brand-600 hover:bg-brand-700
+                   text-white font-semibold shadow-soft">Buy Template</a>
+            <a href="#features" class="px-5 py-3 rounded-xl ng-white/80 text-slate-900 hover:bg-white
+                   font-semibold ">see Features</a>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!--3 part-->
+    <section id="Features" class="py-16 sm:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl text-center mx-auto mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold">packed with practical Features</h2>
+                <p class="text-slate-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nihil, illum
+                    hic quis culpa ad id quaerat doloremque, tempora sequi sint vitae fuga, esse iure accusamus aliquam
+                    consectetur quos expedita?</p>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-3 lg-grid-cols-3">
+                <!--card-->
+                <div class="rounded-2xl border border-slate-200 p-6 hover:shadow-soft transition-show">
+                    <div class="h-12 w-12 rounded-xl bg-brand-100 text-brand-700 grid place-items-center
+                mb-4">1</div>
+                    <h3 class="font-semibold text-lg"> Headless & Accessible</h3>
+                    <p class="text-slate-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                        odit </p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 p-6 hover:shadow-soft transition-show">
+                    <div class="h-12 w-12 rounded-xl bg-brand-100 text-brand-700 grid place-items-center
+                mb-4">2</div>
+                    <h3 class="font-semibold text-lg">responsive & Accessible</h3>
+                    <p class="text-slate-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                        odit repellendus ut</p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 p-6 hover:shadow-soft transition-show">
+                    <div class="h-12 w-12 rounded-xl bg-brand-100 text-brand-700 grid place-items-center
+                mb-4">3</div>
+                    <h3 class="font-semibold text-lg">Modern & Accessible</h3>
+                    <p class="text-slate-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                        odit repellendus ut</p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 p-6 hover:shadow-soft transition-show">
+                    <div class="h-12 w-12 rounded-xl bg-brand-100 text-brand-700 grid place-items-center
+                mb-4">4</div>
+                    <h3 class="font-semibold text-lg">Componentsize & Accessible</h3>
+                    <p class="text-slate-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                        odit repellendus ut</p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 p-6 hover:shadow-soft transition-show">
+                    <div class="h-12 w-12 rounded-xl bg-brand-100 text-brand-700 grid place-items-center
+                mb-4">5</div>
+                    <h3 class="font-semibold text-lg">Utility & Accessible</h3>
+                    <p class="text-slate-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                        odit repellendus ut</p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 p-6 hover:shadow-soft transition-show">
+                    <div class="h-12 w-12 rounded-xl bg-brand-100 text-brand-700 grid place-items-center
+                mb-4">6</div>
+                    <h3 class="font-semibold text-lg">Dark-mode & Accessible</h3>
+                    <p class="text-slate-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                        odit repellendus ut</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--4 part-->
+    <section id="state" class="py-12 bg-slate-50 border-y border-slate-200/70">
+        <div class="container mx-auto px-4 sm:px-6 lh:py-8">
+            <div class="grid gap-8 md:grid-cols-4 text-center">
+                <div>
+                    <div class="text-3xl font-extrabold">12k+</div>
+                    <p class="text-slate-600">Happy users</p>
+                </div>
+                <div>
+                    <div class="text-3xl font-extrabold">98%</div>
+                    <p class="text-slate-600">Satisfaction</p>
+                </div>
+                <div>
+                    <div class="text-3xl font-extrabold">250k+</div>
+                    <p class="text-slate-600">components</p>
+                </div>
+                <div>
+                    <div class="text-3xl font-extrabold">4.9</div>
+                    <p class="text-slate-600">Avrage Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--5 part-->
+    <section id="Services" class="py-16 sm:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                <div class="rounded-3xl overflow-hidden shadow-soft">
+                    <img src="https://media.istockphoto.com/id/2148223779/photo/top-view-of-smart-team-working-together-to-plan-house-construction-symposium.jpg?s=1024x1024&w=is&k=20&c=Ht0A-tS0sUZt8yBukaN69721GdVuBNSrWc4rkzyBpSo="
+                        class="w-full h-80 object-cover" />
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-3">Design,Bulid,Ship</h2>
+                    <p class="text-slate-600 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                        libero vitae pariatur magni
+                        officia ducimus molestias. Labore veritatis dolorum harum eos molestias maxime? </p>
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <div class="h-10 w-10 rounded-xl bg-brand-100 grid place-items-center">A</div>
+                            <div>
+                                <h3 class="font-semibold">Product strategey</h3>
+                                <p class="text-slate-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Dignissimos, totam.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <div class="h-10 w-10 rounded-xl bg-brand-100 grid place-items-center">B</div>
+                            <div>
+                                <h3 class="font-semibold">UI-UX Design</h3>
+                                <p class="text-slate-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Dignissimos, totam.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <div class="h-10 w-10 rounded-xl bg-brand-100 grid place-items-center">c</div>
+                            <div>
+                                <h3 class="font-semibold">Engineering</h3>
+                                <p class="text-slate-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Dignissimos, totam.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href="#cta" class="inline-block mt-6 px-4 py-2 rounded-lg border border-slate-300">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--6 part-->
+    <section id="Gallery" class="py-16 bg-slate-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-end justify-between mb-8">
+                <div>
+                    <h2 class="text-3xl">Showcase</h2>
+                    <p class="text-slate-600">A quick peek at what you can build.</p>
+                </div>
+                <a href="#" class="text-brand-700 hover:underline">view all</a>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D&auto=
+                format&fit=crop&q=60&w=600" alt="Gallery" class="rounded-2xl h-52 w-full object-cover">
+
+
+                <img src="https://media.istockphoto.com/id/2208156879/photo/ux-ui-development-along-with-web-design-to-develop-mobile-and-laptop-app-interface-layout.webp?a=1&b=1&s=612x612&w=0&k=20&c=wHjVGSsOb7OYSnSVcJ49RsHdx9IGhkakUF1sweRwloQ="
+                    alt="Gallery" class="rounded-2xl h-52 w-full object-cover">
+
+
+                <img src="https://media.istockphoto.com/id/1337612033/photo/seo-search-engine-optimization-concept-for-promoting-ranking-traffic-on-website-optimizing.webp?a=1&b=1&s=612x612&w=0&k=20&c=dwVZEi78cxxga4acdsY8uE_W8o0wM4t9LXEyW0c4wi0="
+                    alt="Gallery" class="rounded-2xl h-52 w-full object-cover">
+
+
+                <img src="https://media.istockphoto.com/id/2204337769/photo/digital-marketing-development-and-goals-strategy-attract-organic-traffic-for-big-sales.webp?a=1&b=1&s=612x612&w=0&k=20&c=CDFsitcQFmrPWNB47jJUfUqY6adPpMH2ziQIVDFJMck="
+                    alt="Gallery" class="rounded-2xl h-52 w-full object-cover">
+            </div>
+        </div>
+    </section>
+    <!--7 part-->
+    <section class="py-16 sm:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-6">
+                <div class="lg:col-span-1 bg-gradient-to-br from-brand-600 to-brand-800  text-white rounded-3xl p-8">
+                    <h2 class="text-3xl font-bold mb-3">LoveByMakers</h2>
+                    <p class="text-white/90">a soul crafted with purpose, guided by light, protected by faith, and destined to shine with grace forever.</p>
+                    <div class="mt-6 flex items-center gap-3">
+                        <img class="h-10 w-10 rounded-full"
+                            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600"
+                            alt="">
+                        <div>
+                            <div class="font-semibold">Avery Patel</div>
+                            <div class="text-sm text-white/80">product lead,pixelware</div>
+                        </div>
+                    </div>
+                    </div>
+
+                
+                    <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6">
+                    <div class="rounded-2xl border border-slate-200 p-6">
+                        <p class="text-slate-500">Loved by Maker, guided by purpose, shining bright through every storm.</p>
+                        <div class="mt-4 text-sm text-slate-500">samir -k</div>
+                    </div>
+                
+                
+                    <div class="rounded-2xl border border-slate-200 p-6">
+                        <p class="text-slate-500">Even in silence, I’m loved by Maker, endlessly seen and cherished.</p>
+                        <div class="mt-4 text-sm text-slate-500">Amara-R</div>
+                    </div>
+                
+                
+                    <div class="rounded-2xl border border-slate-200 p-6">
+                        <p class="text-slate-500">oved by Maker, shaped by grace, walking paths chosen with divine care..</p>
+                        <div class="mt-4 text-sm text-slate-500">sima</div>
+                    </div>
+                
+                
+                    <div class="rounded-2xl border border-slate-200 p-6">
+                        <p class="text-slate-500">My soul rests fearless, knowing I’m loved by Maker beyond measure.</p>
+                        <div class="mt-4 text-sm text-slate-500">Josiah</div>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+        </div>
+    </section>
+    <!--8 part-->
+    <section id="Pricing" class="py-16 sm:py-20 bg-slate-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold">simple ,transprant pricing</h2>
+                <p class="text-slate-600">choose aplane Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="grid gap-6 lg:grid-cols-3">
+                <!--plan-->
+                <div class="rounded-2xl border border-slate-200 p-6 bg-white">
+                    <div class="text-sm font-semibold text-brand-700">stater</div>
+                    <div class="mt-3 text-4xl font-extrabold">$0</div>
+                    <p class="text-slate-600 mt-2">Lorem ipsum dolor sit amet.</p>
+                    <ul class="mt-4 space-y-4 text-sm text-slate-700">
+                        <li>. 10 components</li>
+                        <li>. community</li>
+                        <li>. MIT Licenses</li>
+                    </ul>
+                    <a class="mt-6 inline-block w-full text-center  rounded-lg border border-slate-300
+                    py-2 hover:border-br-600">Get started</a>
+                </div>
+                <div class="rounded-2xl border-2 border-brand-600 p-6 bg-white relative">
+                    <span class="absolute -top-3 right-6 rounded-full bg-brand-600 text-white text-xs px-3
+                    py-1">popular</span>
+                    <div class=" text-sm font-semibold text-brand-700">pro</div>
+
+                    <div class=" mt-3 text-4xl font-extrabold">$49</div>
+                    <p class="text-slate-600 mt-2">Lorem, ipsum dolor.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-700">
+                        <li>. 10 components</li>
+                        <li>. community</li>
+                        <li>. MIT Licenses</li>
+                    </ul>
+                    <a class="mt-6 inline-block w-full text-center  rounded-lg text-white  bg-brand-600
+                    py-2 hover:border-br-600">Buy Pro</a>
+                </div>
+                <div class="rounded-2xl border-2 border-slate-200 p-6 bg-white ">
+                    <div></div>
+                    <div class=" text-sm font-semibold text-brand-700">teams</div>
+
+                    <div class=" mt-3 text-4xl font-extrabold">$129</div>
+                    <p class="text-slate-600 mt-2">Lorem, ipsum dolor.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-700">
+                        <li>. 10 components</li>
+                        <li>. community</li>
+                        <li>. MIT Licenses</li>
+                    </ul>
+                    <a class="mt-6 inline-block w-full text-center  rounded-lg text-white  bg-brand-600
+                    py-2 hover:border-br-600">contact slaes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--9 part-->
+    <section class="py-16 sm:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold">meet the team</h2>
+                <p class="text-slate-500">small but mighty.</p>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="rounded-2xl border border-slate-200 p-6 text-center">
+                    <img  src="https://media.istockphoto.com/id/1501770003/photo/happy-handsome-young-indian-man-head-shot-front-portrait.jpg?s=612x612&w=0&k=20&c=P2toTbaknymA7vf28IQNa-3xrlUjPXLFqvN2Zra8_nw=" alt="" class="h-20 w-20 rounded-full mx-auto object-cover">
+                    <div class="mt-4 font-semibold ">Rohit Sharma</div>
+                    <div class="text-sm text-slate-500">Design Lead</div>
+                </div>
+                <div class="rounded-2xl border border-slate-200 p-6 text-center">
+                    <img  src="https://media.istockphoto.com/id/1320207991/photo/head-shot-portrait-confident-indian-businesswoman-with-arms-crossed.jpg?s=612x612&w=0&k=20&c=M44wAGnNg7AF0PJLYErI2XQBtp-wOYd7txI9NyCJBns=" alt="" class="h-20 w-20 rounded-full mx-auto object-cover">
+                    <div class="mt-4 font-semibold ">Priya Varma</div>
+                    <div class="text-sm text-slate-500">Ui/Ux</div>
+                </div>
+                <div class="rounded-2xl border border-slate-200 p-6 text-center">
+                    <img  src="https://media.istockphoto.com/id/1388253782/photo/positive-successful-millennial-business-professional-man-head-shot-portrait.jpg?s=612x612&w=0&k=20&c=uS4knmZ88zNA_OjNaE_JCRuq9qn3ycgtHKDKdJSnGdY=" alt="" class="h-20 w-20 rounded-full mx-auto object-cover">
+                    <div class="mt-4 font-semibold ">Mohit Patel</div>
+                    <div class="text-sm text-slate-500">Font-End</div>
+                </div>
+                <div class="rounded-2xl border border-slate-200 p-6 text-center">
+                    <img  src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ=" alt="" class="h-20 w-20 rounded-full mx-auto object-cover">
+                    <div class="mt-4 font-semibold ">Mahi Mehata</div>
+                    <div class="text-sm text-slate-500">Digital Marketing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--10 part-->
+    <section id="cta" class="py-20 bg-gradient-to-br from-brand-600 to-brand-800 text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 items-center gap-8">
+                <div class="lg:col-span-2">
+                    <h2 class="text-4xl font-extrabold leading-tight">Ready to bhuild Somthing Greate</h2>
+                    <p class="mt-3 text-white/90">Ready to build something great, we combine creativity, passion, and innovation to turn bold ideas into real success. Together, we shape the future with determination, teamwork, and unstoppable energy every day.</p>
+                </div>
+                <div class="flex gsp-3 lg:justify-end">
+                    <a class="px-5 py-3 rounded-xl bg-white text-slate-800 font-semibold">START FREE</a>
+                    <a class="px-5 py-3 rounded-xl bg-black/20 border border-white/30  font-semibold">See Pricing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact-->
+    <section id="contact" class="py-16 sm:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="rounded-2xl border border-slate-200 p-6">
+                    <h3 class="text-xl font-semibold">Send us a message</h3>
+                    <form class="mt-4 grid gap-4">
+                        <input class="w-full rounded-lg border border-slate-300 px-4 py-2"
+                        placeholder="FULL NAME"/>
+                         <input class="w-full rounded-lg border border-slate-300 px-4 py-2"
+                        placeholder="EMAIL"/>
+                        <textarea class="w-full rounded-lg border border-slate-300 px-4 py-2"
+                        placeholder="TELL US ABOUT YOUR PROJECTT..."></textarea>
+                        <button class="rounded-lg bg-brand-600 text-white px-4 py-2"type="SUBMIT">SUBMIT</button>
+                    </form>
+                </div>
+                <div class="rounded-2xl border border-slate-200 p-6">
+                    <h3 class="text-xl font-semibold">visit our studio</h3>
+                    <p class="text-slate-600 mt-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="mt-6 grid gap-4">
+                        <div class="flex gap-3 items-start">
+                            <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-100">
+                                <img src="data:image/jpeg;base64,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"alt="">  </span>
+                                <div>
+                                    <div class="font-medium">+91 56487 90959</div>
+                                    <div class="text-sm text-slate-600">Mon-Fri, 9AM-5PM IST</div>
+                                </div>
+                          
+                        </div>
+                         <div class="flex gap-3 items-start">
+                            <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-100">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQUAAACUCAMAAACtBczxAAAAbFBMVEUAAAD////m5ubl5eXk5OTj4+P6+vr7+/vy8vLu7u7r6+v19fVJSUmbm5uYmJjU1NSCgoLKysqQkJDExMRra2vd3d1CQkI6OjopKSkeHh5iYmKnp6d8fHxwcHATExOhoaEzMzNRUVG0tLRZWVlBq9zRAAAV3klEQVR4nNVdh3KjvBa2CgiJTTAuaU6xnfd/x6t2hCpgGzv/1exsGAvQ0YfK6VohWTjBWKgLLEsr/9aVvKjlRUsx0TWCYNLIvwz7Ncw8TFVNrW5RD7cYauQt3L62sjW4sg0SaFA/jGSD1L4WY6CJ+zS5Bhv7WhY0WHs1mibdD0zMaxsM/YAGZTuVa3D1tygIWVp9ixB4Pgr0/xIFEqHQ8IaLRuy7vt9ut33XdX233xu65c1/hEJFqL6HyGJQIBTrFitSmacpoQYFWaOfhmc4JZVBQV7oGgI18mHTEVmjySXyLeqt3fnnafP5dXp5Ob6vVqu319eX393n5nDou6ppODTIDU0UJzQZFOQtrW0wqFEPVwYFeWGQszQJSy2qgNpK9nnFZWlaWYS8UH8b+MFd8GKNf0taA3+Hh2uGxPZn/XU6rvLleNp9Pm8Japv8a/log3lqea6Gww/6YiWRqCzUxIzWaoDNTIKq+Pkl1Ha0yhpmP78ZMgC1usUMDNwwcfj6PX4XEIDy/fpv97NHtkEMDcLnN4NVNVhbaqHGfX6cfP7WDGM7MNSQhxo9dlZqlYalgCIzuTAsBVj3Vc42txS4aWcmAcxZEi0Sas5SWAp0R5qaP53ephBwSLyfDkzvHLBIuKVgaNBfClyDtWrQ9HVY0lyN/TL2tZJ8kqBAAAWLITFjQdUACmaqymUPFkQSrlxQw4YFkeixUPenmQAM5dTLjUNAg7avpkH1ZQAFGqFAYCxAPyiuHE21R5PGx6Cg96q6rlv5l8u/dSMvGnXB7YWugVsa/5aWlx4Oapp2f3i7GANV3p46gVhEU+vTlNbARQM0JTX6Yeb1sNZ7hKgqsxPIv3YFrSrC9My0NcLWMFJVdpGwNdzW1FhemCEjb4EaCTXrN+9XYaBxeN7uhd0j5GvNTlDZRUJemOkR1SCo0TSZAR71Q3cV+lHdh1/Ajl9ob8JAle/1Vvds4BdIyjviZbgmEqNAiiiQMgrUMTEGBdH069ebMFDldd3pj7YI10Tm846ssp8z3TAAd/0B9MPY1ggYJa6Gk83tGGgcNq1CwdKEDVfJ3A7lxoKtUTQN2wI8A2NBf01EbI3eMNQeYXZgMuww+gHdCEwCYbcnTQfj9lV1QodfQ9D2trngl7ct8mkaOq4YbWYb1KTAx9CQMK/jChLNJjSjO6XjF8hsfoHE/ILbKaV4tFsMA1V+a59foGV+gRT4BZbyC2Q+CuwaFLhYcCCY8r6t0S0o1AO/kEPB8qTywp8RyM0ICksBtROSk3hGENgWbA3ab+ayifPL90Zwv0E3I+xccRsGhhoRzwga845mHVlp8UKV4ILbi7Qm+CF7i/y/7j8Wx0CVj77QYIHINluT9sNK1tQwm5hSM6DlD9hwTRQka1sjb7Fck6wxAhQFyZravac9LLM1pOXlrHgjCqIVtZI1BcmaAtdEQbSiVoCiwE5TkKwttfKC3oNrQjfySWPlfZPVuC3CNYHggZ2WBVuRpBpEEhCT7FKpauyCWAEK+r3o824YqPIpu+aEaeokNl+00jS5BVEv+bJjQT9QBUul1rLUkeDB26wAxT0xiY8JUKi5z5IwlF/RDEJd69PUZMW9uIepXCZWcnpYLQu1godbCipqYaPVsBQgbylgUlgxY9ItEni/LJeQKzuhqTWfP10KrCDo+oFtjRQEqe2hvAWeuYeWpXkACKvVl2ALa1l8jZtBoYIpJGeb1bgRp3Gz047EWharccNfDwBBwSBbLmncQMtCSho3T8tCBi0LbhljtbYIyItGXggkL/QUsjVC3dJipZ2QP3AssKrRc6o1F5jXDNX3XhOgfAhJnaUWG5psPzRNusbQpPuhqa1VV5mp0T1EUMNWzN6nXsUEPICFa0QI24iAVw2Q1B4kcnqgR4EgYUCGprDjQJPwIMEWEmEgwR4k0A8BOyWBnRIHO2U7KCFHdkozPTC77xYZlrWv4SWhElLvh45fMJI1ifULZI6Wpcw1lbQs7eaBIKxWG3RvLQuiAzdmlQ2+lqXNoYDO12lYry1v5wbnUGA+CopVZBEKjgcezMOrJipWztD//AtXn7lQl23376EgrFb/upCykKyQ/Nb7uU0umhWhbqeksW2KJrYp4JqcBYpargnvH7cyQtlx32hZOduUM1raflSwUzqjpSQb9tBFuSbx2EXBlCe2FNckcQEOGsYCDceCEkIjrqlydko7FkS/vFJlunx3Y2OBRsK0GrnWOEGN+VPVGBTAbBvaemv/wr+lSW7RP9R/gIEqKKXJUlsnRuzQZl3DLeqZvJZFfX4CwoqBrRoATbUsdxamy2WH0KSWBQUDo7qbloX3WRKPL/+WKy/HbBs9WlDLQhzvSEIBynMCiHlH4nhH8ZKS9/2x2VZ67C1Smmq7+cisPS+tzzt64p4TraqIdyTAO/q+LCBegBwhAjmiFSBAxXIEcOaypvlJNWwvB03OooUfUrS/f9Ag1Hk0GWp90UqAaBXJQ1rL4lvulVrGQgJqGXWRGPehxqiX0D7ll166xTFQpUu1uv+6hie6oxb6EXsguB4KST5zPRzXL5CifqHy9AvPCWnv9wFBwpCOuo0o6Bf8yRxOD5LoF27jmuQtdZeO0587gYDQTzrses0YLq1ropGuCcVjgYVj4SkhbHU3ECTB6WAYGQsMDQuiHgu6h+lYmHaKy/vawQ91d0zpuiMKKaf+1rUlt79mvB+OhQq9PgeuKRagwFvS45qI5ppYOkZX91oVVOnS5p5w4vVZeV6f6gfPNpV6fVJyM9ck0qGwahzNanOqb+x3+I4mbe64X4ZrumEsbFOq3LLAtp9rWQ7tDRi0B/WOzy2DHzLtnQW1xoncWIjslNmxULTocviBJ7d4P6CcbgUors0e+v11/RTpvgzD+AyjgWXae6lnWaZ9Y3xks57hvwC+Ai04l3n+C5lpOqDAYPt431w3LWpn931y78w1iCNnW+u/QFL/BfWKpT16cJu1wiQoyIW8vwKEftBkjqPwNc+XpezRI/fO2AM4tk1RUvQAzqxVeRSUfsxN7VmFcd/YN47Cyvj5xvzCYKa2tinr1pbyC4F1ovZEqzpvm7LCirFNNef5KKhF7AIQRPjqCRS2KGebMgKU8G1TUCOYJ1qxlS9AWZkSBCgWuwyzGuQ3+wzK22YLKKx227nLQ72N3jyBwhdzNHmiFQPLvathPOqhlSnVm0f0C9WYfoG3GcXCCAqrt3U1C4RqHds2JlB4FaB2LuoXnKN/ldEv6Ieu5JqaPm+IKaIgBeE5gtZPuv1OoGCcQm/lmqzDA3Ee43RwhQj1joNPPK1KNrkRFFbfv3QCA/qb0SlNoGBEl5xLB01cU3J6R809KJ8XxU/U3oVhMLR2IrnF1tQFl40xFBTFY7xkAdkpFHYtUKv5PEMkb9yFXxPeouMjLrJHULBHGED3hfiXCRRWr8VVst4WfASnUPjXC5rYI5yTItimivaIW7QsJfvsFAqr1TrPU3fr0gNTKLyd+UJalsROORVDlxGqZ6Kwes8wD+Jc9pOcQmH1zN1YiDVuqZ0SuCaI2VyZ6aPlDNBDwMVQ02Rr6pJtcgYKinmIQIhZhMtQWDcDcUDtQHZr+8HDGrjX7BHY2ylhH3HO1tp/wcWCDMESoujPlqKwzuDxtvGV9TxhEVTf3QyZRGEnhpAIHcAB/gvERYn4opXa8YkVEQff1/kRQ45rEsXgwBSFp5pklr3j2YFwPqbVr6QeXjCFwu++xC/EXhwjHsAZFGK/psijp+LbkvNKisIzy68ib2bTbHNvkvwVc0r+SRTetz4K9BqPHhyrFKzlj0EMFPOjo8yMwDwvShVRQGKXWf2eGtZkpsv7Tjc7H4XvrZ0Rte9XIWDD8GaE7AcDHpjZuCnfc08LWs7fUdfI+8Bchxrr76jc5YSE5HAhCoidM3Po3yGjrjqdzQPzUVj9cKyoNTKlvADZ2EmbIFOaW2yN7IeSKQf9QmKbohO+rxejIBmw5zneHt/PVui6CAVRtk0Nvq9mQbzONoVzXFNxoxxBQe6H0/5PH24PvQSFjQ1quIprqiAYt4JgXC+omEIwbi6ouCkyemMoIHwYHw7fB+zuvQSFz33sE1+BT3wFPvFV7BNvI5JNfIT2bFHaCWWw0ZKUubDOL/ai8WrkL6TowDKKguSTx4bDh89bX4SCsE48PrWNpRZqhluCrkaxMrgYK5PwC6QcBDCBwoiD6Ns5uO8iFPhorAwelJBlD+DLtSwjHo6TKCCe2zTl9hi5flyCgtxaF7NNeQKUiaFLNG4gZuPu93oU5HBIN83TOb7pEhR+yaBxS7PTkCQ7TaBxm7boJuZgK4nsb0IBic0xeOi4SaXMS1A47euA2tQ3MdtDsy4EtimE/CmER3ZKOWSqYo6RWSgg1vsmna8+d8slKHQYBChgF41reOAAbmJlFrRN4RvWBVM8HvycdQa7aEZYFK6yTV2vaxLFGKm5KMjGzKz6bfLVl6DwscfL+EFbDnpQ1yZ6Rz+SkF/LLwRl+60FodtR2O1JQe8IIdCp3hE65GRKyJmmX8Ucv+Akay+7BeyUC4wF1fiIZ+Tl/IL5tsHnDw3xNM7FcVteFlwtMhZGy0UoNAG/MHBNV0cMzeGaCL5KmrobCs/1jVxTNl+T5ZrifE3YiVaiqFv9ExQO6MJ8TWCbUvmaYue+Ogg0COIjQtajZlfoF+6JQiPapB8xoySghgc9zGhZaOQBXPsO8r6WZVsSkf8EhTMf0bJYQTDJ47aAB3Ax/8xfoPC25feJNs9p3HzbVFGQ+AsUTv0sjZte7Fx+R9+jZ/Cb91M5tC5hg/CSPBjdi6kh860y90dht+dpSgp9EUcG6BoBLi/c5fRzcVNkyN1SuUikgAHz46ZESeX2Fyhs0Kj/QsxILhc31aSBEX+HwhO62ZflShTmW+7vjsJxezsKwBuRKpPl0goeaZZL3BdCq/8AhZNKl+urzyOuKe6HZhChh1VWpox8Wajny2LMdbB8zPbouTsKH5ykviw2SoRmZEpqe2hlylt8WTIhG3+Fwqa9JqffqK5pNgoFq/XjUXjrm8XipsCjx3FNqUdPkKOHibwv1uNReGn5WAzd4NET2ilpEDeVjR4op8tzNSivaHk8Cl+oiWmbJp+7WxKu6YKcfvKZXKTMX6BwbiA2fn5OP7IM16SCMP4jKLTL5PQDjdtITr/ITmlQmBklcmcUvlocokBjjVtqpwxQUD4dLiQCHFvqIMgAgiVc+AFc8BqR/wQKSpKCfkBMeRos4dxXILAe4unF4L+wv9R/QavfsrEBQHHtOnEzCuPRYyhkFy/xX7ida6oFFjkXL9cJE0kYBAJehkLmBZn2tugeJydEFroqQWE4OQHvjylVYVSpmlDXgSA7By9wv+SiSgVaLBMysVWQTNzl4dY14AhrIgl9t7+/jzDWgSfCc3fN5wbX7q6xtda4+ppcHPoBuXbon9Uv2t/R1picfrbG+Dtqz0CsEweiLuWiHxttfuy4R63J6ad2fL30KUi8HjLXD2xrjL+jevOVOf1sdpqMSHVHFNLGntKcftf5vt6S06/t/zgLRVcvlNMPxyhQbykIFwnspUs3YyEzGB6ZkeQ5OEDA5vTzFgkXVBx8TWWtpYNPfBOVXJ688ao6k83vkdlpMmSliQfH+zAWN1VBTr+8/wJyOf1+UiPVwzIVPXHI4xbrmnz1uYubAi2Uzem3ZCbkHAP5qKxV4m6ZkMO4KZRqWeKcfn+XwWzLXer8JKdfYqd0WhYXQ0cy502pVE61n7WKu1jrIJ9VA0HXcMufZbP7QhA3zSFuWodWsyi0urU2Nh107dJXDVmrzLe9LrbWWyT+CIVWx4LQKmNJi2Jrq9g2Vd3h5ITuT7Jc9gLSbyyc08+etESAd4yDKzM5/ZQqdjRo8F5lI2wOYMc7XpHTj9qcftbHDeQIBHIEsvw3AjlChQ+ZuCmGgGe3nDnij0iTH5ZdJWyQkKEWBdJCyxgCOQI1wshD9nQs08M4biq2a4dHLeRz+kXn2zUlc93dyr8O5c7c8z0Qsjn9Qsu9iTYf9egZ9+IIzgwgRdvtnYoJpYBJMCOnX+DFsXROPxNoqxafxyZDXrf+gnhjjh4fBWJRCHVNKPaJZ6VTt4qBVHcon6hwiobvE29z+kFeJewCZ2IU2lFTVJOtKeXJeujJCWMGtDaiNt+N0nlTxM/jZmxTZEjlENmmCGRChkWiEuJhp2jUeimgcEB0OaffIEAJqFneNhUuEqIcLbBo+cJ2Eix73tQQN5Xk9CvFTTmuqfJO9WYPgWG3b/xtQY+FujAW5sVNJfGUYdRkMZ4yjV3UNQw/4KQl0jTTNPnkT/Vw2CPkaIr3CCtZezsljfcIEp/MKEgxqGyh8tGg4GTG0knOLqefO/LFO4hssYihdKfUyl9c3/kENgQN3s4v+FqWKd6RZmLuU97RE63uexqfGbmRAHVjPmjhnTc1HFeErN1aCR4up1+DBwO2FkmCNOPeQUbonM/vdnt5OdeZw5Vy500FBuwgpx/yz5uy+RfGBahUJEncjDPHmfN2Rn6Ba8pHjzKO2vmDzidO4wukyJty+sEkcDslhfADLu5xYut6j7z9MDiZsXRmQLJTLp/Tr3i2uXymvsPpvYLDsgcL4qJcU+4sEaddnHGWiOWg6aDilTX1slvmTojwxBBnghg7SwT0jhMntk7IGRfIWomvHeoXPdV7VMorkzLDa7G9MKdf3jZl3P5YUKO/RrvYCe+E26WAEqBW1LmBkbFN0cwhMwvm9EtP6YRM0Y6J6da34/C67hthuQK/wQLXtJQHcDmnXxVyTSprheWaQtFK24Fa/Zbt+rbd4m3Tu5bVtmDHAoGxQCZtUxnRKvYADrIxjCdsyKakmHqmaXm/uV4jKTFoWf79E+klxqkNb8nn9GPgypRmMMMup5/xXwicnHCwcUENEt3TdTi8/+wln+M16ByWsg36Of2SlBR+BjPk5fTLePTg+dHmdBCgHL9AHb9ga2wIvGRzt8XMHcVy6lVD2MkqcEKwJ0aWzqe8yqNn8GsayekX8Y4jKJChhtvXyoWXHU7vc5eI77fTE68b5KPgZ0MIFkTfrymDApuBAhhsRNE2JbK2KePjhpzXGAxQz1QE/mRmZVfE7A+703EKie/X0+6A1Ws4Mg+7Bn17Gap53GDj0+RsU8zWCDb0MJvTb9I2xcdtUyOiFfePQFefafv0uft3LCBwPH2tf/qqbpvs+enp4etZASp5xpFS6OEML45srIzbKfH4TukiuznI8rxp9t32cNh87n5fXl/Vsvl+fHk57T43Pz/nTj0t32YnATzsaRGs+9mwU8b6hST7bRxhnNkp78w1OQ5l8KMjdvvZ77u+67p+u932fbdXp9c33DCr8NrKkqIavCvXlOOgLzjnnkbn3PscNIhWBJ7RLVbgbEUtLTq/pm3Q3kIrCq/FQJNZZyvHQZfPuafpOffWAWWQEaJz7hOOYxGmpPBwcguPX5u+36+5mKbpGn3xPyFPGLBk+G31AAAAAElFTkSuQmCC "alt="">  </span>
+                                <div>
+                                    <div class="font-medium">xyz@gmail.com</div>
+                                    <div class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur.</div>
+                                </div>
+                                </div>
+                                 <div class="flex gap-3 items-start">
+                            <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-100">
+                                <img src=" data:image/jpeg;base64,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qV5cfiV0ogIiICIiAiIg3vZ1tLuejpmU0u9WWhzvXpnO4x55mM9R7uR7uaszY7xQX62Q3G1VDZ6WYZa5vUesEdRHYqVrcdmuu6vRd3D8vmtk7gKumB6vy2/nD6eXeAtki6KGsp7hRw1lFM2annYHxyMPBzTyK70BVg20a0dqbUTqGkkza7c4xxbp4SycnP7+wd3ipq2vamOmdGVMsD9ysqz8mpyObS4HLvJoPnhVRQEREBERAREQEREBERAREQEREBERAREQEREEz9H/AFm6nq3aWr5fvE5MlEXe4/m5ngeY789qnxUhpKmajqoaqlkMc8L2yRvHNrgcg/FXG0jfItSabt93hwPlMQL2g+w8cHN8nAhBBnSJvRrNVUtpjfmK3wBz29kknE/uhnxUTrYdoVc6464vlS45zWyMafzWndb9DQteQEREBERAREQEREBERAREQEREBERAREQEREBT30bry6Wgutkldn0EjamEF2eDvVcAOoAtafnFQIpD2EXD5DtDpoycMq6eWFxzwADd/wCtgQaFWTuqqueoeculkc8nvJyulZvWljl05qi42uVha2GZ3oifejJyw/DCwiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgLKaYuhst8prg0ZMO9w8Wlv8ANYtbpsm0qNVasjp6iHfoIInyVRIOAMENHjvEcOwHsQSV0kqCk+49quPoG/LBUeg9MOZjLXO3T2jIz3ce0qAURAREQEREBERAREQEREBERAREQEREBERAREQFaHYVQUtLs+o6mngayerfI+eQc5CHuaM+AA4faiIP/9k="alt="">  </span>
+                                <div>
+                                    <div class="font-medium">Support</div>
+                                    <div class="text-sm text-slate-600">Mon-Fri, 9AM-5PM IST</div>
+                                </div>
+                          
+                        </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="border-t border-slate-200 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid gap-8 md:grid-cols-4">
+                <div>
+                    <a href="#" class="flex items-center gap-2 font-extrabold text-xl">
+                         <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600
+                text-white">T</span>Tailwind 12-UI
+                    </a>
+                    <p class="text-slate-600 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. perferendis,nisi?</p>
+                </div>
+            
+            <div>
+            <div class="font-semibold  mb-3">product</div>
+            <ul class="space-y-2 text-slate-600">
+                <li><a class="hover:text-brand-600">Features</a></li>
+                 <li><a class="hover:text-brand-600">Pricing</a></li>
+                  <li><a class="hover:text-brand-600">Changelog</a></li>
+                   <li><a class="hover:text-brand-600">Roadmap</a></li>
+            </ul>
+        </div>
+         <div>
+            <div class="font-semibold  mb-3">Company</div>
+            <ul class="space-y-2 text-slate-600">
+                <li><a class="hover:text-brand-600">About</a></li>
+                 <li><a class="hover:text-brand-600">Blog</a></li>
+                  <li><a class="hover:text-brand-600">Careers</a></li>
+                   <li><a class="hover:text-brand-600">Contact</a></li>
+            </ul>
+        </div>
+         <div>
+            <div class="font-semibold  mb-3">Legal</div>
+            <ul class="space-y-2 text-slate-600">
+                <li><a class="hover:text-brand-600">Terms</a></li>
+                 <li><a class="hover:text-brand-600">Privacy</a></li>
+                  <li><a class="hover:text-brand-600">Licensing</a></li>
+                   
+            </ul>
+        </div>
+        </div>
+        <div class="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+            <div>Tailwind 12-UI .All right reserved</div>
+            <div class="flex items-center gap-4">
+                <a class="hover:text-slate-900" href="#">Twitter</a>
+                 <a class="hover:text-slate-900" href="#">GitHub</a>
+                  <a class="hover:text-slate-900" href="#">Dribble</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
